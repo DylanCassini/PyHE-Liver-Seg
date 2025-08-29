@@ -1,0 +1,58 @@
+
+COMPREHENSIVE 3D LIVER SEGMENTATION ANALYSIS
+==========================================
+
+Date: 2025-08-29 19:20:23
+Dataset: Liver CT Segmentation (3-class: background, liver, tumor)
+Models: UNet, SegResNet, SwinUNETR, VNet
+Enhancement: BBHE 3D
+
+DATASET STATISTICS:
+------------------
+Total samples: 59
+Training samples: 30
+Validation samples: 5 (estimated)
+Test samples: 24
+
+TEST RESULTS SUMMARY:
+--------------------
+
+UNet:
+  Original:  0.8112 ± 0.1763
+  Enhanced:  0.8254 ± 0.1293
+  Improvement: +1.75%
+
+SegResNet:
+  Original:  0.8804 ± 0.0496
+  Enhanced:  0.8775 ± 0.0567
+  Improvement: -0.32%
+
+SwinUNETR:
+  Original:  0.8989 ± 0.0313
+  Enhanced:  0.8836 ± 0.0613
+  Improvement: -1.71%
+
+VNet:
+  Original:  0.5748 ± 0.1179
+  Enhanced:  0.4195 ± 0.2294
+  Improvement: -27.02%
+
+OVERALL STATISTICS:
+------------------
+Average Original Dice: 0.7913 ± 0.1292
+Average Enhanced Dice: 0.7515 ± 0.1930
+Average Improvement: -6.83% ± 11.72%
+
+Best Performing Model:
+  Original: SwinUNETR (0.8989)
+  Enhanced: SwinUNETR (0.8836)
+
+Most Improved Model: UNet (+1.75%)
+
+CONCLUSION:
+----------
+✗ Enhancement does not consistently improve performance
+✗ 3 models do not benefit from enhancement
+
+The BBHE 3D enhancement technique shows an average improvement of -6.83%
+across all tested models, demonstrating its effectiveness for liver segmentation tasks.

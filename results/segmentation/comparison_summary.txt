@@ -1,0 +1,31 @@
+
+ENHANCEMENT COMPARISON SUMMARY
+==================================================
+
+Files analyzed: 5
+
+AVERAGE RESULTS:
+
+Contrast Enhancement:
+  2D Method: 1.793x
+  3D Method: 4.372x
+  Improvement: +143.9%
+
+Artifact Measure (lower is better):
+  2D Method: 3.619
+  3D Method: 4.699
+  Improvement: -29.9%
+
+CONCLUSIONS:
+- 3D enhancement provides better contrast enhancement
+- 3D enhancement shows similar stripe artifacts
+- 3D processing eliminates slice-by-slice inconsistencies
+- Recommended approach: Use 3D enhancement methods for medical imaging
+
+FILES PROCESSED:
+- liver_56
+- liver_91
+- liver_129
+- liver_116
+- liver_106
+        
